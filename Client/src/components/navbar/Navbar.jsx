@@ -2,72 +2,66 @@ import React from 'react'
 import "./Navbar.css"
 
 function Navbar() {
+
   return (
     <header className="header" data-header>
-    <div className="container">
-    <img src="./logo.png" alt="" />
-      <h1>
-      
-        <a href="#" className="logo">ZIPLINE</a>
-      </h1>
+      <div className="container">
 
-      <nav className="navbar" data-navbar>
-
-        <div className="navbar-top">
-          <a href="#" className="logo">Transportio</a>
-
-          <button className="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
+        <div className='logo-name'>
+          <img className='comp-logo' src="images/logo.png" alt="" />
+          <img className='comp-logo1'  src="images/logoName.png" alt="" />
+          {/*<a href="#" className="logo">ZIPLINE</a>*/}
         </div>
 
-        <ul className="navbar-list">
+        <nav className="navbar" data-navbar>
 
-          <li className="navbar-item">
-            <a href="#home" className="navbar-link" data-nav-link>
-              <span>Home</span>
+          <ul className="navbar-list">
 
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
+            <li className="navbar-item">
+              <a href="/" className="navbar-link" data-nav-link>
+                <span>Home</span>
 
-          <li className="navbar-item">
-            <a href="#about" className="navbar-link" data-nav-link>
-              <span>About</span>
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
 
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
+            <li className="navbar-item">
+              <a href="about" className="navbar-link" data-nav-link>
+                <span>About</span>
 
-          <li className="navbar-item">
-            <a href="#service" className="navbar-link" data-nav-link>
-              <span>Service</span>
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
 
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
+            <li className="navbar-item">
+              <a href="#service" className="navbar-link" data-nav-link>
+                <span>Service</span>
 
-          <li className="navbar-item">
-            <a href="#blog" className="navbar-link" data-nav-link>
-              <span>Blog</span>
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
 
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
+            <li className="navbar-item">
+              <a href="blog" className="navbar-link" data-nav-link>
+                <span>Blog</span>
 
-          <li className="navbar-item">
-            <a href="#" className="navbar-link" data-nav-link>
-              <span>Contact</span>
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
 
-              <ion-icon name="chevron-forward"></ion-icon>
-            </a>
-          </li>
+            <li className="navbar-item">
+              <a href="contact" className="navbar-link" data-nav-link>
+                <span>Contact</span>
 
-        </ul>
+                <ion-icon name="chevron-forward"></ion-icon>
+              </a>
+            </li>
 
-      </nav>
+          </ul>
 
-      {/* <div className="header-contact">
+        </nav>
+
+        {/* <div className="header-contact">
 
         <div>
           <p className="contact-label">Free Call In U.S.A</p>
@@ -81,14 +75,14 @@ function Navbar() {
 
       </div> */}
 
-      <button className="nav-open-btn" aria-label="Open menu" data-nav-toggler>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
+        <button className="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
 
-      <div className="overlay" data-nav-toggler data-overlay></div>
+        <div className="overlay" data-nav-toggler data-overlay></div>
 
-    </div>
-  </header>
+      </div>
+    </header>
   )
 }
 
